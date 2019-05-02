@@ -13,7 +13,6 @@ public class Main extends Application {
 
         primaryStage.setTitle("Snake Classic");
         primaryStage.setScene(new Scene(root, 300, 350));
-        //primaryStage.setResizable(false);
         primaryStage.show();
     }
 

@@ -106,12 +106,6 @@ public class Controller {
         drawBoard(game.getGrid());
     }
 
-    public void moveHead(){
-        game.moveHead(new Position(10,10));
-        game.step();
-        drawBoard(game.getGrid());
-    }
-
     public void reset() {
         game.reset();
         drawBoard(game.getGrid());

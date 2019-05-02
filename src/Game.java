@@ -20,11 +20,6 @@ public class Game {
 
     private LinkedList<Position> snake = new LinkedList<>();
 
-    /**
-     * @param width width of the board
-     * @param height height of the board
-     * @param start the start position of snake
-     */
     public Game(int width, int height, Position start) {
         this.width = width;
         this.height = height;
@@ -101,18 +96,6 @@ public class Game {
         grid[nextPos.getX()][nextPos.getY()] = 1;
         grid[snake.getLast().getX()][snake.getLast().getY()] = 0;
         snake.removeLast();
-    }
-
-    public void moveHead(Position pos){
-        snake.addFirst(pos);
-        grid[pos.getX()][pos.getY()] = 1;
-        grid[snake.getLast().getX()][snake.getLast().getY()] = 0;
-        snake.removeLast();
-
-        /*
-        grid[pos.getX()][pos.getY()] = 0;
-        snake.set(0, pos);
-        */
     }
 
     public boolean gameOver(){

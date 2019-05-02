@@ -12,7 +12,6 @@
             <Button fx:id="button2" text="Pause" onAction="#pause" focusTraversable="false"/>
             <Button fx:id="button3" text="Reset" onAction="#reset" focusTraversable="false"/>
             <Button fx:id="button4" text="Step" onAction="#oneStep" focusTraversable="false"/>
-            <Button fx:id="button5" text="Move head" onAction="#moveHead" focusTraversable="false"/>
         </HBox>
     </top>
 
